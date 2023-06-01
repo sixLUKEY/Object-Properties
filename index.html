@@ -8,18 +8,21 @@
     <title>Objects/Properties</title>
 </head>
 <body>
-    <h1>Objects And Properties</h1>
+    <h1 class="heading">Objects And Properties</h1>
 
-    <div class="container">
-        <p>Please input your name</p>
-        <input type="text" name="name" id="name">
-        <p>Please input your surname</p>
-        <input type="text" name="surnamname" id="surname">
-        <p>Please input your age</p>
-        <input type="number" name="age" id="age">
-        <button onclick="addPerson()">Enter</button>
-    </div>
-    <div class="outputBox" id="outputBox"></div>
+    <main>
+        <div class="container">
+            <p class="title">Please input your name</p>
+            <input type="text" name="name" id="name" class="input">
+            <p class="title">Please input your surname</p>
+            <input type="text" name="surnamname" id="surname" class="input">
+            <p class="title">Please input your age</p>
+            <input type="number" name="age" id="age" class="input">
+            <div class="btn-div">
+            <button onclick="addPerson()">Enter</button>
+                <button onclick="undo()">Undo</button>
+            </div>
+        </div>
         <table class="table">
             <tr>
                 <th>Name</th>
@@ -28,9 +31,11 @@
             </tr>
             <br>
             <tbody id="table">
-
+    
             </tbody>
         </table>
+    </main>
+    
     <script src="app.js"></script>
 </body>
 </html>

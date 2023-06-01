@@ -21,7 +21,7 @@ let outputBox = document.getElementById('table');
         outputBox.innerHTML = '';
         people.forEach((data) =>{
             outputBox.innerHTML +=`
-            <tr>
+            <tr class="row">
             <td>${data.name}</td>
             <td>${data.surname}</td>
             <td>${data.age}</td> 
@@ -35,4 +35,7 @@ let outputBox = document.getElementById('table');
         print();
     }, 100);
 
+    function undo(){
+        people.pop();
+    }
 
